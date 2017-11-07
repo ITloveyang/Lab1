@@ -28,6 +28,7 @@ class lianbiao{
 public class main1 {
 	private static String[] we=new String[100];
 	static Graph graph=new Graph();
+	static int flag=0;
 	public static void main(String[] args) {
 		String file,bridge;
 		
@@ -75,8 +76,6 @@ public class main1 {
 		b=graph.list[biao];
 		p=b.first;
 		System.out.println(b.data);
-		
-		
 		Scanner in1=new Scanner(System.in);
 		System.out.print("是否继续？");
 		shifoujixu=in1.nextInt();
@@ -88,11 +87,12 @@ public class main1 {
 				p=p.next;
 			}
 			if(p.biaoji==0){
-				
+				flag=1;
 				p.biaoji=1;
 				biao=p.adj;b=graph.list[biao];p=b.first;System.out.println(b.data);
 			}
 			else{
+				flag=2;
 				biao=p.adj;b=graph.list[biao];p=b.first;System.out.println(b.data);
 				break;
 			}
@@ -101,6 +101,7 @@ public class main1 {
 			System.out.println();
 		}
 		System.out.println("已结束");
+		
 		in1.close();
 		
 	}
