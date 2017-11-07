@@ -26,7 +26,7 @@ class lianbiao{
 }
 
 public class main1 {
-	private static String[] we=new String[100];
+	public static String[] we=new String[100];
 	static Graph graph=new Graph();
 	static int flag=0;
 	public static void main(String[] args) {
