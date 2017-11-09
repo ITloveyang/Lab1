@@ -21,7 +21,7 @@ public class main1Test {
         }
 		
 	}
-	/*@Test
+	@Test
 	public void testRandomWalk1() {
 		main1 m1=new main1();
 		m1.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\图.txt");
@@ -32,8 +32,8 @@ public class main1Test {
             System.out.println("第二分支正确");
 
         }
-	}*/
-	/*@Test
+	}
+	@Test
 	public void testRandomWalk2() {
 		main1 m2=new main1();
 		m2.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\图.txt");
@@ -44,6 +44,6 @@ public class main1Test {
             System.out.println("第三分支正确");
 
         }
-	}*/
+	}
 
 }
