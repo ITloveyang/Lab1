@@ -6,62 +6,95 @@ import org.junit.Test;
 import  สตั้าป.main1;
 
 public class main1Test2 {
+	@SuppressWarnings("deprecation")
+	@Test
+	public void test() {
+		
+		create cr=new create();
+		Graph graph=new Graph();
+		cr.graph=graph;
+		cr.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\2.txt");
+		graph=cr.graph;
+		String[] expectation=new String[100];
+		String[] result=new String[100];
+		expectation[0]="explore";
+		expectation[1]="seek";
+		qiaojie qj=new qiaojie();
+		String resul=qj.queryBridgeWords(graph,"to", "strange");
+		result=qiaojie.we;
+		assertEquals(expectation, result);
+		//fail("Not yet implemented");
+	}
 	@Test   
 	public void test1() {
-		
-		main1.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\tu.txt");
+		create cr=new create();
+		Graph graph=new Graph();
+		cr.graph=graph;
+		cr.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\2.txt");
+		graph=cr.graph;
 		String expectation="strange";
-		String result=main1.queryBridgeWords(main1.graph,"explore", "new");
+		qiaojie qj=new qiaojie();
+		String result=qj.queryBridgeWords(graph,"explore", "new");
 		assertEquals(expectation, result);
 		//fail("Not yet implemented");
 		}
 	@Test
 	public void test2() {
 		
-		main1.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\tu.txt");
+		create cr=new create();
+		Graph graph=new Graph();
+		cr.graph=graph;
+		cr.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\2.txt");
+		graph=cr.graph;
 		String expectation="explore";
-		String result=main1.queryBridgeWords(main1.graph,"to", "explore");
+		qiaojie qj=new qiaojie();
+		String result=qj.queryBridgeWords(graph,"to", "explore");
 		assertEquals(expectation, result);
 		//fail("Not yet implemented");
 		}
 	@Test
 	public void test3() {
 		
-		main1.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\tu.txt");
+		create cr=new create();
+		Graph graph=new Graph();
+		cr.graph=graph;
+		cr.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\2.txt");
+		graph=cr.graph;
 		String expectation="explore";
-		String result=main1.queryBridgeWords(main1.graph,"then", "explore");
+		qiaojie qj=new qiaojie();
+		String result=qj.queryBridgeWords(graph,"then", "explore");
 		assertEquals(expectation, result);
 		//fail("Not yet implemented");
 		}
 	@Test
 	public void test4() {
 			
-			main1.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\tu.txt");
+		create cr=new create();
+		Graph graph=new Graph();
+		cr.graph=graph;
+		cr.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\2.txt");
+		graph=cr.graph;
 			String expectation="explor";
-			String result=main1.queryBridgeWords(main1.graph,"then", "explor");
+			qiaojie qj=new qiaojie();
+			String result=qj.queryBridgeWords(graph,"then", "explor");
 			assertEquals(expectation, result);
 			//fail("Not yet implemented");
 			}
 	@SuppressWarnings("deprecation")
-	@Test
-	public void test() {
-		
-		main1.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\tu.txt");
-		String[] expectation=new String[100];
-		expectation[0]="explore";
-		expectation[1]="seek";
-		String result=main1.queryBridgeWords(main1.graph,"to", "strange");
-		assertEquals(expectation, main1.we);
-		//fail("Not yet implemented");
-	}
+	
 	@Test
 
 public void test5() {
 		
-		main1.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\tu.txt");
+		create cr=new create();
+		Graph graph=new Graph();
+		cr.graph=graph;
+		cr.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\2.txt");
+		graph=cr.graph;
 		String expectation;
 		expectation ="new";
-		String result=main1.queryBridgeWords(main1.graph,"to", "new");
+		qiaojie qj=new qiaojie();
+		String result=qj.queryBridgeWords(graph,"to", "new");
 		assertEquals(expectation, result);
 		//fail("Not yet implemented");
 	}
@@ -69,23 +102,48 @@ public void test5() {
 
 	public void test6() {
 			
-			main1.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\tu.txt");
+		create cr=new create();
+		Graph graph=new Graph();
+		cr.graph=graph;
+		cr.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\2.txt");
+		graph=cr.graph;
 			String expectation;
 			expectation ="ne";
-			String result=main1.queryBridgeWords(main1.graph,"to", "ne");
+			qiaojie qj=new qiaojie();
+			String result=qj.queryBridgeWords(graph,"to", "ne");
 			assertEquals(expectation, result);
 			//fail("Not yet implemented");
 		}
 	@Test
 	public void test7() {
 		
-		main1.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\tu.txt");
+		create cr=new create();
+		Graph graph=new Graph();
+		cr.graph=graph;
+		cr.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\2.txt");
+		graph=cr.graph;
 		String[] expectation=new String[100];
 		expectation[0]="explore";
 		expectation[1]="seek";
 		expectation[2]="sss";
-		String result=main1.queryBridgeWords(main1.graph,"to", "strang");
-		assertEquals(expectation, main1.we);
+		qiaojie qj=new qiaojie();
+		String result=qj.queryBridgeWords(graph,"to", "strang");
+		assertEquals(expectation, qiaojie.we);
+		//fail("Not yet implemented");
+	}
+	@Test
+	public void test8() {
+		
+		create cr=new create();
+		Graph graph=new Graph();
+		cr.graph=graph;
+		cr.createDirectedGraph("C:\\Users\\lenovo\\Desktop\\2.txt");
+		graph=cr.graph;
+		String expectation="to";
+		
+		qiaojie qj=new qiaojie();
+		String result=qj.queryBridgeWords(graph,"to", "to");
+		assertEquals(expectation, result);
 		//fail("Not yet implemented");
 	}
 
